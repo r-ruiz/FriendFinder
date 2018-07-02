@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Friend Finder</title>
+        <!-- ============================================================================================ -->
+        <!-- Reset CSS -->
+        <link rel="stylesheet" type="text/css" media="screen" href="./css/reset.css" />
+
+        <!-- jQuery -->
+        <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+
+        <!-- Bootstrap CDN-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+
+        <!-- Custom Font--> 
+        <link href="https://fonts.googleapis.com/css?family=Hind+Siliguri" rel="stylesheet">
+
+        <!-- Custom Styles -->
+        <link rel="stylesheet" type="text/css" media="screen" href="./css/styles.css" />
+        <!-- ============================================================================================ -->
+    </head>
+    <body>
+        <header class="bg-success mb-5 shadow p-3 mb-5 rounded">
+            <h1 class="m-0 text-white">
+                <i class="fas fa-user-friends"></i><a href="/" title="Return to the home page"> Famous Friend Finder</a>
+            </h1>   
+        </header>
+        <div class = "container">
+            <div class="card shadow-lg p-3 mb-5 rounded">
+                <div class="card-header">
+                    <h3><strong>About You</strong></h3>
+                </div>
+                <div class="card-body">
+                    <h4>Your Full Name</h4>
+                    <div class="input-group">
+                        <input id = "friendName" class="form-control" type="text" name="name" placeholder="Something Wonderful">
+                        <span class="input-group-text">Required</span>
+                    </div>  
+                    <br>
+                    <h4>Link to a Photo Image</h4>
+                    <div class="input-group">
+                        <input id = "friendImage" class="form-control" type="text" name="name" placeholder="Photo URL">
+                        <span class="input-group-text">Required</span>
+                    </div>
+                </div>
+            </div>
+            <br />
+            <div class="card shadow-lg p-3 mb-5 rounded">
+                <div class="card-header rounded">
+                    <h3><strong>Questionnaire</strong></h3>
+                </div>
+                <div class="card-body">
+                    <div class="col-auto my-1">
+                        <!-- Question 1 -->
+                        <!-- ============================================================================================ -->
+                        <h4><strong>Question 1</strong></h4>
+                        <h5>You enter the room and state "OK everyone, I'm taking over now."</h5>
+                        <select data-placeholder="" class="custom-select mr-sm-2" id="Q1">
+                            <option value=""></option>
+                            <option value="1">1 (Strongly Disagree)</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5 (Strongly Agree)</option>
+                        </select>
+                        <br /><br />
+                        <!-- Question 2 -->
+                        <!-- ============================================================================================ -->
+                        <h4><strong>Question 2</strong></h4>
+                        <h5>You see a complex problem and tell yourself, "Piece of cake."</h5>
+                        <select data-placeholder="" class="custom-select mr-sm-2" id="Q2">
+                            <option value=""></option>
+                            <option value="1">1 (Strongly Disagree)</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5 (Strongly Agree)</option>
+                        </select>
+                        <br /><br />
+                        <!-- Question 3 -->
+                        <!-- ============================================================================================ -->
+                        <h4><strong>Question 3</strong></h4>
+                        <h5>You get easily frustrated when people take too long to make a point.</h5>
+                        <select data-placeholder="" class="custom-select mr-sm-2" id="Q3">
+                            <option value=""></option>
+                            <option value="1">1 (Strongly Disagree)</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5 (Strongly Agree)</option>
+                        </select>
+                        <br /><br />
+                        <!-- Question 4 -->
+                        <!-- ============================================================================================ -->
+                        <h4><strong>Question 4</strong></h4>
+                        <h5>You love the mind more than appearance, this is why first impressions are always wrong.</h5>
+                        <select data-placeholder="" class="custom-select mr-sm-2" id="Q4">
+                            <option value=""></option>
+                            <option value="1">1 (Strongly Disagree)</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5 (Strongly Agree)</option>
+                        </select>
+                        <br /><br />
+                        <!-- Question 5 -->
+                        <!-- ============================================================================================ -->
+                        <h4><strong>Question 5</strong></h4>
+                        <h5>You love it when someone outwits you and proves you wrong.</h5>
+                        <select data-placeholder="" class="custom-select mr-sm-2" id="Q5">
+                            <option value=""></option>
+                            <option value="1">1 (Strongly Disagree)</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5 (Strongly Agree)</option>
+                        </select>
+                        <br /><br />
+                        <!-- Question 6 -->
+                        <!-- ============================================================================================ -->
+                        <h4><strong>Question 6</strong></h4>
+                        <h5>You like others that are as assertive as you are.</h5>
+                        <select data-placeholder="" class="custom-select mr-sm-2" id="Q6">
+                            <option value=""></option>
+                            <option value="1">1 (Strongly Disagree)</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5 (Strongly Agree)</option>
+                        </select>
+                        <br /><br />
+                        <!-- Question 7 -->
+                        <!-- ============================================================================================ -->
+                        <h4><strong>Question 7</strong></h4>
+                        <h5>You are willing to relinquish the lead to someone that likes you.</h5>
+                        <select data-placeholder="" class="custom-select mr-sm-2" id="Q7">
+                            <option value=""></option>
+                            <option value="1">1 (Strongly Disagree)</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5 (Strongly Agree)</option>
+                        </select>
+                        <br /><br />
+                        <!-- Question 8 -->
+                        <!-- ============================================================================================ -->
+                        <h4><strong>Question 8</strong></h4>
+                        <h5>You are willing to wait for the perfect pickup line.</h5>
+                        <select data-placeholder="" class="custom-select mr-sm-2" id="Q8">
+                            <option value=""></option>
+                            <option value="1">1 (Strongly Disagree)</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5 (Strongly Agree)</option>
+                        </select>
+                        <br /><br />
+                        <!-- Question 9 -->
+                        <!-- ============================================================================================ -->
+                        <h4><strong>Question 9</strong></h4>
+                        <h5>You have more fun alone in wide open spaces than in compact dark places packed with people</h5>
+                        <select data-placeholder="" class="custom-select mr-sm-2" id="Q9">
+                            <option value=""></option>
+                            <option value="1">1 (Strongly Disagree)</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5 (Strongly Agree)</option>
+                        </select>
+                        <br /><br />
+                        <!-- Question 10 -->
+                        <!-- ============================================================================================ -->
+                        <h4><strong>Question 10</strong></h4>
+                        <h5>You are bored of this survey and want to meet your life buddy already!</h5>
+                        <select data-placeholder="" class="custom-select mr-sm-4" id="Q10">
+                            <option value=""></option>
+                            <option value="1">1 (Strongly Disagree)</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5 (Strongly Agree)</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <!-- Submit Button -->
+            <!-- ============================================================================================ -->
+            <br />
+            <button id="submitButton" type="submit" class="btn btn-md btn-dark shadow mb-5 rounded"><h4>Submit</h4></button> 
+        </div>
+        <!-- Footer -->
+        <!-- ============================================================================================ -->
+        <footer class="footer-sv  bg-dark shadow rounded">
+            <div class="container-fluid">
+                <H4 class="m-0 text-center text-white">Copyright &copy; Ruben Ruiz 2018</h4>
+                <p class="m-0 text-center text-white"><a href="/api/friends">API Friends List</a> | <a href="https://github.com/r-ruiz/FriendFinder" target="_blank">GitHub Repo</a></p>
+            </div>
+        </footer>
+        <!-- Modal -->
+        <!-- ============================================================================================ -->
+        <div id="yourFriend" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2 class="modal-title"><strong>Your New Famous Friend!</strong></h2>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <h2 id="matchName"></h2>
+                        <img id="matchImg" src="" alt="" style="max-width: 350px;">
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- JavaScript -->
+        <!-- ============================================================================================ -->
+        <script>
+            var allFieldsDone;
+            $(document).ready(function() {
+                $("#submitButton").on("click", function() {   
+                    // Check if all the user fields are completed
+                    checkIfComplete(function(){
+                        if(allFieldsDone){
+                            collectInputs();
+                        }
+                        else{
+                            alert("Please complete all questions in the survey before submitting");
+                        }
+                    });
+                }); 
+            }); 
+            // Function to valid user input
+            // =============================================================
+            function checkIfComplete(callback){
+                var questionsCompleted;
+                $(".custom-select").each(function(){
+                    if ( $(this).val() == "" ){
+                    questionsCompleted = false;
+                    }
+                }).promise().done(function(){
+                    // Check if any questions are incomplete
+                    if(questionsCompleted == false){
+                        allFieldsDone = false;
+                    }
+                    else if( $("#friendName").val().trim() == "" ){
+                        allFieldsDone = false;
+                    }
+                    else if( $("#friendImage").val().trim() == "" ){
+                        allFieldsDone = false;
+                    }
+                    else{
+                        allFieldsDone = true;
+                    }
+                    callback();       
+                });
+            }
+            function collectInputs(){
+                // Make new friend
+                // =============================================================
+                var newFriend = {
+                    name: $("#friendName").val().trim(),
+                    photo: $("#friendImage").val().trim(),
+                    scores: []
+                };
+                // Loop through Questions using the same class
+                // =============================================================
+                var scoresArr = [];
+                $(".custom-select").each(function(){
+                    scoresArr.push( parseInt( $(this).val() ) ); 
+                })
+                //  Return a promise
+                // =============================================================
+                .promise().done(function(){
+                    newFriend.scores = scoresArr;
+                    // Post to the friends.js and get a match
+                    // =============================================================
+                    var currentURL = window.location.origin;
+                    $.post(currentURL + "/api/friends", newFriend, function(data){
+                    // Add Match attributes to Modal call
+                    // =============================================================
+                    $("#matchName").text(data.name);
+                    $("#matchImg").attr("alt", data.name);
+                    $("#matchImg").attr("src", data.photo);
+                    $("#yourFriend").modal("toggle");
+                    });
+                });
+            }
+        </script>
+    </body>
+</html>
