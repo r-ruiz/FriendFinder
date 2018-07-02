@@ -8,7 +8,7 @@ function apiRoutes(app) {
         res.json(friendsData);
     });
 
-    // A POST routes
+    // POST routes
     // =============================================================
     app.post("/api/friends", function (req, res) {
 
@@ -43,8 +43,6 @@ function apiRoutes(app) {
         // =============================================================
         var celebMatch = 0;
         for(var i=1; i < compareArray.length; i++){
-            // Lower number means a better match
-            // =============================================================
             if(compareArray[i] <= compareArray[celebMatch]){
                 celebMatch = i;
             }
